@@ -13,24 +13,24 @@ The Lasso regression model produced the best test R2 and RMSE scores. This makes
 
 Based on Lasso regression, the strongest positive predictors of SalePrice are
 
-`Gr Liv Area`: Above grade (ground) living area square feet
-`Overall Qual`: Rating of the overall material and finish of the house
+- `Gr Liv Area`: Above grade (ground) living area square feet
+- `Overall Qual`: Rating of the overall material and finish of the house
 The type of neighbourhood the house is located in
-`Garage Cars`: Size of garage in car capacity
-`Bsmt Full Bath`: The number of full bathrooms in the basement
-`Full Bath`: The number of full bathrooms above ground
-`Screen Porch`: Screen porch area in square feet
+- `Garage Cars`: Size of garage in car capacity
+- `Bsmt Full Bath`: The number of full bathrooms in the basement
+- `Full Bath`: The number of full bathrooms above ground
+- `Screen Porch`: Screen porch area in square feet
 
 Our company's real estate agents can use this information to get estimate a price for each house and ensure that our customers sell their house at a good market price. In addition, based on this information, our company can start collecting this data on the houses we sell to start our own database for future predictions.
 
-## Limitations of the model 
-However, as with every model, this model has limitations as well. 
+## Limitations of the model
+However, as with every model, this model has limitations as well.
 
-1. Assumption of linearity between the response variable, `SalePrice`, and the features. Real world data like the Ames housing dataset rarely has a straight-line relationship between the dependent and independent variables. 
+1. Assumption of linearity between the response variable, `SalePrice`, and the features. Real world data like the Ames housing dataset rarely has a straight-line relationship between the dependent and independent variables.
 
-2. In reality, there can be many outliers for `SalePrice` and the model would not be able to predict the prices of such outliers accurately since outliers are removed when training the model. 
+2. In reality, there can be many outliers for `SalePrice` and the model would not be able to predict the prices of such outliers accurately since outliers are removed when training the model.
 
-3. This model is specific to Ames and may not be useful to predict house prices in other towns. 
+3. This model is specific to Ames and may not be useful to predict house prices in other towns.
 
 ## For Reference: Data Dictionary
 
