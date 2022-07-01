@@ -3,8 +3,9 @@
 ## Problem Statement
 We are employees of a marketing agency hired by a toy company to perform market research on Reddit to build a classifier model that classifies posts from Marvel vs DC movies subreddits in order to
 
-Build a classifier model that can be applied to other platforms (e.g. Twitter, Facebook) with text data to determine public interest in either movie franchise
-Find popular heroes and keywords for each franchise to identify product and marketing opportunities (using sentiment analysis)
+- Build a classifier model that can be applied to other platforms (e.g. Twitter, Facebook) with text data to determine public interest in either movie franchise
+- Find popular heroes and keywords for each franchise to identify product and marketing opportunities (using sentiment analysis)
+
 The success of the classifier model will be evaluated using the accuracy metric i.e. is the model able to correctly label a post as coming from the Marvel/DC subreddit? Similarly, sentiment analysis will be evaluated using accuracy i.e. is the model able to correctly identify a post as having positive, neutral or negative sentiment? This can help us identify the most discussed heroes and keywords (a sign of popularity) and whether the discussions around these heroes and topics are positive, neutral or negative to identify product and marketing opportunities to boost revenue for our customer, the toy company.
 
 ## Data Source
