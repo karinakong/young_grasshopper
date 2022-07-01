@@ -8,6 +8,7 @@ Find popular heroes and keywords for each franchise to identify product and mark
 The success of the classifier model will be evaluated using the accuracy metric i.e. is the model able to correctly label a post as coming from the Marvel/DC subreddit? Similarly, sentiment analysis will be evaluated using accuracy i.e. is the model able to correctly identify a post as having positive, neutral or negative sentiment? This can help us identify the most discussed heroes and keywords (a sign of popularity) and whether the discussions around these heroes and topics are positive, neutral or negative to identify product and marketing opportunities to boost revenue for our customer, the toy company.
 
 ## Data Source
+5,000 posts each from r/marvelstudios and r/DC_Cinematic
 
 ## Conclusion and Findings
 We managed to build a model that is able to classify Reddit posts as Marvel/DC content with pretty good accuracy (~90%)!
