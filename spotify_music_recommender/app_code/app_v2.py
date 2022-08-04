@@ -2,11 +2,11 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-import streamlit.components.v1 as components 
+# import streamlit.components.v1 as components 
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth, SpotifyClientCredentials
 import pinecone
-from key import cid, secret, api_key
+# from key import cid, secret, api_key
 
 # Text
 st.title('Sneezed on These Beats')
