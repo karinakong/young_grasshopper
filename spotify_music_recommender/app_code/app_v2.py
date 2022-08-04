@@ -34,26 +34,26 @@ if playlist_id:
         scope = "playlist-modify-public"
         redirect_uri = "https://github.com/karinakong"
 
-        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=cid, 
-                                                       client_secret=secret, 
+        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=st.secrets["cid"], 
+                                                       client_secret=st.secrets["secret"], 
                                                        redirect_uri=redirect_uri, 
                                                        scope=scope))
         token = SpotifyOAuth(scope=scope, 
-                             client_id=cid, 
-                             client_secret=secret, 
+                             client_id=st.secrets["cid"], 
+                             client_secret=st.secrets["secret"], 
                              redirect_uri=redirect_uri, 
                              show_dialog=False)
 
         token_info = token.get_access_token()
 
-        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=cid, 
-                                                       client_secret=secret, 
+        sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=st.secrets["cid"], 
+                                                       client_secret=st.secrets["secret"], 
                                                        redirect_uri=redirect_uri, 
                                                        scope=scope, 
                                                        cache_handler=spotipy.MemoryCacheHandler(token_info=token_info)))
         
         # Set up authorization for Pinecone API
-        pinecone.init(api_key=api_key, 
+        pinecone.init(api_key=st.secrets["api_key"], 
                       environment="us-west1-gcp")
         index = pinecone.Index("spotifyv1")
 
